@@ -6,7 +6,7 @@
 
 }
 
-#languageHun{
+#languageEn{
     display: none;
 }
 
@@ -31,24 +31,24 @@ nav{
     padding: 1rem;
 }
 
-.leftnav , .brightnessmode, .language , .rightnav, .rightnav ul{
+.leftnav , .brightnessmode,.brightnessmode a, .language , .rightnav, .rightnav ul{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .leftnav img{
-    margin-right: 1rem;
     max-height: 2rem;
     color: aliceblue;
     background-color: aqua;
     border-radius: 50%;
 }
-.leftnav a{
-    padding-left: 1rem;
+.brightnessmode a{
+    margin-right: 1rem;
+    border: 1px solid red;
 }
 .rightnav li{
-    padding-right: 1rem;
+    margin-left: 1rem;
 }
 
 /* --------------- Wellcome part --------------*/
