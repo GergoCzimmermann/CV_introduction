@@ -1,12 +1,14 @@
 :root{
-    --backgroundColor: gray;
-    --textBackground: black;
-    --navBackground: hsl(175, 29%, 25%);
-    --textColor: white;
+    --backgroundColor: hsl(0, 0%, 100%);
+    --textBackground: white;
+    --navBackground: hsl(0, 0%, 100%, 0.8);
+    --textColor: black;
+    --nightThemeSelector: white;
+    --dayThemeSelector: hsl(0, 0%, 80%);
 
 }
 
-#languageEn{
+#languageHun{
     display: none;
 }
 
@@ -23,12 +25,17 @@ h1{
     font-size: 3rem;
 }
 
+
  /* --------------- Navigation--------------*/
+
 nav{
     background-color: var(--navBackground);
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    padding: 0.2rem 0;
+    top: 0;
 }
 
 .leftnav , .brightnessmode,.brightnessmode a, .language , .rightnav, .rightnav ul{
@@ -37,26 +44,79 @@ nav{
     align-items: center;
 }
 
-.leftnav img{
+.leftnav .dark img{
     max-height: 2rem;
-    color: aliceblue;
-    background-color: aqua;
+    background-color: var(--nightThemeSelector);
+    border-radius: 50%;
+    border: 0.2rem solid var(--nightThemeSelector);
+}
+
+.leftnav .bright img{
+    max-height: 2rem;
+    background-color: var(--dayThemeSelector);
+    border-radius: 50%;
+    border: 0.2rem solid var(--dayThemeSelector);
+}
+
+.brightnessmode a{
+    margin-left: 1rem;
+    border: 0.2rem solid white;
     border-radius: 50%;
 }
-.brightnessmode a{
-    margin-right: 1rem;
-    border: 1px solid red;
-}
-.rightnav li{
+
+.language a{
     margin-left: 1rem;
 }
 
+.rightnav li{
+    margin-right: 1rem;
+}
+
+/*--- Hover effects: Brightness---*/
+
+.brightnessmode a:hover{
+    border: 0.2rem solid var(--textColor);
+    transition: 0.5s;
+}
+
+.leftnav img:hover{
+    background-color: white;
+    border: 0.2rem solid white;
+}
+
+/*--- Hover effects: Language/ Pages---*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    font-size: 18px;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.2rem;
+    bottom: -0.2rem;
+    left: 0;
+    background-color: hsl(0, 0%, 0%);
+    transform-origin: bottom left;
+    transition: transform 0.2s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
 /* --------------- Wellcome part --------------*/
 .wellcome{
+    margin-top: 3.1rem;
     background-image: url("../images/shaking-hands-gebd90838e_1920.jpg");
     background-position: center;
     width: 100%;
-    height: 18rem;
+    height: 20rem;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
