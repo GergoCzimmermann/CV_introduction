@@ -1,0 +1,23 @@
+[33mcommit a7943af9954153594b6325edb799ed207f0fd521[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Gergo <{94219827}+{GergoCzimmermann}@users.noreply.github.com>
+Date:   Sun Dec 18 20:08:07 2022 +0100
+
+    Navigation bar color settings, position, hover effects with same background.
+
+[33mcommit 8fa30d6638b9af87dcef41e91d3abd833e720186[m
+Author: Gergo <{94219827}+{GergoCzimmermann}@users.noreply.github.com>
+Date:   Sun Dec 18 11:42:40 2022 +0100
+
+    Navigation bright-dark mode box size, href modification
+
+[33mcommit 13775c0cba35790643a3fd7849fc19106279f9eb[m
+Author: Gergo <{94219827}+{GergoCzimmermann}@users.noreply.github.com>
+Date:   Thu Dec 15 21:58:32 2022 +0100
+
+    Language visibility / class correction
+
+[33mcommit 940d87b761a723bc77fc611036470e4ce85481a6[m
+Author: Gergo <{94219827}+{GergoCzimmermann}@users.noreply.github.com>
+Date:   Thu Dec 15 21:52:28 2022 +0100
+
+     first commit / folder structure, nav, wellcome basics

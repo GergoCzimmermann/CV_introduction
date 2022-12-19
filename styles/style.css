@@ -26,7 +26,7 @@ h1{
 }
 
 
- /* --------------- Navigation--------------*/
+ /* ------------------------------ Navigation------------------------------*/
 
 nav{
     background-color: var(--navBackground);
@@ -44,23 +44,23 @@ nav{
     align-items: center;
 }
 
-.leftnav .dark img{
+.leftnav img{
     max-height: 2rem;
-    background-color: var(--nightThemeSelector);
+    background-color: var(--navBackground);
     border-radius: 50%;
-    border: 0.2rem solid var(--nightThemeSelector);
+    border: 0.2rem solid var(--navBackground);
 }
 
-.leftnav .bright img{
-    max-height: 2rem;
-    background-color: var(--dayThemeSelector);
-    border-radius: 50%;
-    border: 0.2rem solid var(--dayThemeSelector);
-}
 
-.brightnessmode a{
+.brightnessmode .dark a{
     margin-left: 1rem;
-    border: 0.2rem solid white;
+    border: 0.2rem solid var(--navBackground);
+    border-radius: 50%;
+}
+
+.brightnessmode .bright a{
+    margin-left: 1rem;
+    border: 0.2rem solid var(--textColor);
     border-radius: 50%;
 }
 
@@ -80,8 +80,8 @@ nav{
 }
 
 .leftnav img:hover{
-    background-color: white;
-    border: 0.2rem solid white;
+    background-color: hsl(0, 0%, 80%);
+    border: 0.2rem solid hsl(0, 0%, 80%);;
 }
 
 /*--- Hover effects: Language/ Pages---*/
@@ -112,7 +112,7 @@ nav{
 
 /* --------------- Wellcome part --------------*/
 .wellcome{
-    margin-top: 3.1rem;
+    margin-top: 3.2rem;
     background-image: url("../images/shaking-hands-gebd90838e_1920.jpg");
     background-position: center;
     width: 100%;
