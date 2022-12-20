@@ -8,7 +8,7 @@
 
 }
 
-#languageEn{
+#languageHun{
     display: none;
 }
 
@@ -152,7 +152,7 @@ nav{
 }
 
 .introduction p{
-    max-width: 20rem;
+    max-width: 22rem;
     height: fit-content;
     background-color: var(--textBackground);
     padding: 3rem;
@@ -165,4 +165,21 @@ nav{
     border-radius: 2rem;
     background-color: var(--textBackground);
     box-shadow: 5px 5px 15px 5px #000000;
+}
+
+@media only screen and (max-width: 1200px) {
+    .introduction p{
+        font-size: 1.5rem;
+        max-width: 19rem;
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .introduction p{
+        font-size: 1.2rem;
+        max-width: 15rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
 }
