@@ -1,5 +1,5 @@
 :root{
-    --backgroundColor: hsl(0, 0%, 100%);
+    --backgroundColor: hsl(0, 0%, 60%);
     --textBackground: white;
     --navBackground: hsl(0, 0%, 100%, 0.8);
     --textColor: black;
@@ -142,25 +142,27 @@ nav{
 /* --------------- Introduction part --------------*/
 .introduction{
     display: flex;
-    max-width: 60rem;
-    border: 2px solid gray;
+    width: 100%;
     justify-content: space-around;
     align-self: center;
-    margin: 1rem auto 1rem auto;
+    margin: 2rem auto 2rem auto;
+    background-color: var(--backgroundColor);
     
 
 }
 
 .introduction p{
     max-width: 20rem;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid red;
+    height: fit-content;
+    background-color: var(--textBackground);
+    padding: 3rem;
+    border-radius: 3rem;
+    font-size: 2rem;
 }
 .introduction img{
-    width: 10rem;
+    width: 35%;
     height: fit-content;
-    margin: 1rem;
-    padding: 1rem;
-    border: 1px solid blue;
+    border-radius: 2rem;
+    background-color: var(--textBackground);
+    box-shadow: 5px 5px 15px 5px #000000;
 }
