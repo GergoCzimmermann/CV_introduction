@@ -8,7 +8,7 @@
 
 }
 
-#languageHun{
+#languageEn {
     display: none;
 }
 
@@ -142,9 +142,10 @@ nav{
 /* --------------- Introduction part --------------*/
 .introduction{
     display: flex;
+    flex-wrap:wrap-reverse;
     width: 100%;
     justify-content: space-around;
-    align-self: center;
+    align-items: center;
     margin: 2rem auto 2rem auto;
     background-color: var(--backgroundColor);
     
@@ -153,16 +154,21 @@ nav{
 
 .introduction p{
     max-width: 22rem;
+    min-width: 6rem;
     height: fit-content;
     background-color: var(--textBackground);
     padding: 3rem;
+    margin: 0.5rem;
     border-radius: 3rem;
     font-size: 2rem;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 .introduction img{
-    width: 35%;
+    max-width: 35%;
+    min-width: 16rem;
     height: fit-content;
     border-radius: 2rem;
+    margin: 0.5rem;
     background-color: var(--textBackground);
     box-shadow: 5px 5px 15px 5px #000000;
 }
@@ -181,5 +187,16 @@ nav{
         max-width: 15rem;
         padding: 1rem;
         border-radius: 1rem;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .introduction img{
+        border-radius: 0.5rem;
+        max-width: 100%;
+    }
+    .introduction p{
+        border-radius: 0.5rem;
+        max-width: 100%;
     }
 }
