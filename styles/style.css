@@ -1,5 +1,6 @@
 :root{
-    --backgroundColor: hsl(0, 0%, 70%);
+    --backgroundColor: hsl(0, 0%, 100%);
+    --backgroundColor2: hsl(215, 100%, 95%);
     --textBackground: white;
     --navBackground: hsl(0, 0%, 100%, 0.8);
     --textColor: black;
@@ -20,12 +21,17 @@ i {
 body{
     background-color: var(--backgroundColor);
 }
-a, li, h1, h2, p {
+a, li, h1, h2, h3, p {
     color: var(--textColor);
 }
 
 h1{
     font-size: 3rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight:bold;
 }
 
 
@@ -114,7 +120,7 @@ nav{
   }
 
 
-/* --------------- Wellcome part --------------*/
+/* --------------- Wellcome part (changed based on media screen)--------------*/
 .wellcome{
     margin-top: 2.8rem;
     background-image: url("../images/blue-gcd5ed2e9e_1280.jpg");
@@ -138,17 +144,17 @@ nav{
     margin-left: 5rem;
     margin-right: 5rem;
     width: fit-content;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px var(--textColor);
 
 }
 
-/* --------------- Introduction part --------------*/
+/* --------------- Introduction part (changed based on media screen)--------------*/
 .introduction{
     display: flex;
     flex-wrap:wrap-reverse;
     width: 100%;
     justify-content: space-around;
-    align-items: center;
+    align-items:flex-end;
     margin: 2rem auto 2rem auto;
     background-color: var(--backgroundColor);
     
@@ -164,8 +170,16 @@ nav{
     margin: 0.5rem;
     border-radius: 3rem;
     font-size: 1.9rem;
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px var(--textColor);
 }
+.introduction p a{
+    color: hsl(180, 100%, 25%);
+}
+
+.introduction p a:hover{
+    color: hsl(0, 100%, 25%);
+}
+
 .introduction img{
     max-width: 35%;
     min-width: 16rem;
@@ -173,10 +187,100 @@ nav{
     border-radius: 2rem;
     margin: 0.5rem;
     background-color: var(--textBackground);
-    box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px var(--textColor);
 }
 
+/* --------------- Job History part --------------*/
+.jobHistory{
+    background-color: var(--backgroundColor2);
+}
+
+.jobHistory h2{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--backgroundColor2);
+    padding: 2rem;
+    border-top: 5px solid gray;
+}
+
+.jobBoxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--backgroundColor2);
+    border-bottom: 5px solid gray;
+}
+
+.jobBox{
+    background-color: var(--backgroundColor);
+    border-radius: 0.5rem;
+    margin: 2rem;
+    display: flexbox;
+    height: 30rem;
+    width:300px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 15px 5px var(--textColor);
+    transition: 0.2s;
+}
+
+.jobBox:hover{
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 10px 10px 20px 10px var(--textColor);
+    transition: 0.2s;
+}
+
+.jobBox img{
+    height: 200px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+/* --------------- Studies part --------------*/
+.studies{
+    background-color: var(--backgroundColor);
+}
+
+.studies h2{
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--backgroundColor);
+    padding: 2rem;
+}
+
+.studieBoxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--backgroundColor);
+    border-bottom: 5px solid gray;
+}
+
+.studieBox{
+    background-color: var(--backgroundColor2);
+    border-radius: 0.5rem;
+    margin: 2rem;
+    display: flexbox;
+    height: 20rem;
+    width:300px;
+    padding: 0.5rem;
+    box-shadow: 5px 5px 15px 5px var(--textColor);
+    transition: 0.2s;
+}
+
+.studieBox:hover{
+    margin: 1rem;
+    padding: 1.5rem;
+    transition: 0.2s;
+    box-shadow: 10px 10px 20px 10px var(--textColor);
+}
+
+
 @media only screen and (max-width: 1200px) {
+   /* -Introduction part-*/
     .introduction p{
         font-size: 1.5rem;
         max-width: 19rem;
@@ -185,6 +289,7 @@ nav{
 }
 
 @media only screen and (max-width: 700px) {
+    /* -Introduction part-*/
     .introduction p{
         font-size: 1.2rem;
         max-width: 15rem;
@@ -194,13 +299,14 @@ nav{
 }
 
 @media only screen and (max-width: 580px) {
+    /* -Wellcome part-*/
     .wellcome h1{
         font-size: 2rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
     
-    
+    /* -Introduction part-*/
     .introduction img{
         border-radius: 0.5rem;
         max-width: 100%;
