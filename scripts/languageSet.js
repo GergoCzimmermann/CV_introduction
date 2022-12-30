@@ -2,11 +2,11 @@ let language = localStorage.getItem('language');
 
 if(language == null){
     console.log("First language settings")
-    setTheme('hungarian');
+    setLanguage('hungarian');
 }
 else
 {
-    setTheme(language);
+    setLanguage(language);
     console.log("Basic language setting from Local storage")
 }
 
