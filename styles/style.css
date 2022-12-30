@@ -2,15 +2,20 @@
     --backgroundColor: hsl(0, 0%, 100%);
     --backgroundColor2: hsl(215, 100%, 95%);
     --textBackground: white;
-    --navBackground: hsl(0, 0%, 100%, 0.8);
+    --navBackground: hsl(0, 0%, 100%, 0.9);
     --textColor: black;
     --nightThemeSelector: white;
     --dayThemeSelector: hsl(0, 0%, 80%);
+    --navHover: hsl(0, 0%, 80%);
 
 }
 
 #languageEn {
     display: none;
+}
+
+#languageHun{
+    display: block;
 }
 
 i {
@@ -20,6 +25,7 @@ i {
 
 body{
     background-color: var(--backgroundColor);
+    transition: 0.2s;
 }
 a, li, h1, h2, h3, p {
     color: var(--textColor);
@@ -54,23 +60,26 @@ nav{
     align-items: center;
 }
 
-.leftnav img{
-    max-height: 2rem;
-    background-color: var(--navBackground);
-    border-radius: 50%;
-    border: 0.1rem solid var(--navBackground);
-}
-
 .brightnessmode .dark a{
     margin-left: 1rem;
-    border: 0.1rem solid var(--navBackground);
+    border: 0.1rem solid var(--backgroundColor);
     border-radius: 50%;
+    background-image: url("../images/moon.jpg");
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .brightnessmode .bright a{
     margin-left: 1rem;
-    border: 0.1rem solid var(--textColor);
+    border: 0.1rem solid var(--backgroundColor);
     border-radius: 50%;
+    background-image: url("../images/sun.jpg");
+    width: 2rem;
+    height: 2rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .language a{
@@ -88,11 +97,6 @@ nav{
     transition: 0.5s;
 }
 
-.leftnav img:hover{
-    background-color: hsl(0, 0%, 80%);
-    border: 0.1rem solid hsl(0, 0%, 80%);;
-}
-
 /*--- Hover effects: Language/ Pages---*/
 .hover-underline-animation {
     display: inline-block;
@@ -105,10 +109,10 @@ nav{
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 0.2rem;
+    height: 0.1rem;
     bottom: -0.2rem;
     left: 0;
-    background-color: hsl(0, 0%, 0%);
+    background-color: var(--textColor);
     transform-origin: bottom left;
     transition: transform 0.2s ease-out;
   }

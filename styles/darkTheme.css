@@ -6,5 +6,19 @@
     --textColor: white;
     --nightThemeSelector: black;
     --dayThemeSelector: hsl(0, 0%, 80%);
+}
 
+
+
+.brightnessmode .dark a{
+    background-image: url("../images/moon_dark.jpg");
+}
+
+.brightnessmode .bright a{
+    background-image: url("../images/sun_dark.jpg");
+}
+
+
+.wellcome{
+    background-image: url("../images/dice-g6a2cf8a8c_1280.jpg");
 }

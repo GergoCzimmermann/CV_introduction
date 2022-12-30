@@ -5,6 +5,7 @@
     <link href="./styles/reset_style.css" type="text/css" rel="stylesheet">
     <link href="./styles/style.css" type="text/css" rel="stylesheet">
     <link id="theme-style" rel="stylesheet" type="text/css" href="">
+    <link id="language-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
     <header>
@@ -12,18 +13,18 @@
             <div class="leftnav">
                 <div class="brightnessmode">
                     <div class="dark">
-                        <a data-mode="dark" class="themeMode" href="#" ><img src="./images/moon.png"></a>
+                        <a data-mode="dark" class="themeMode" href="#" ></a>
                     </div>
                     <div class="bright">
-                        <a data-mode="bright" class="themeMode" href="#" ><img src="./images/sun.png"></a>
+                        <a data-mode="bright" class="themeMode" href="#" ></a>
                     </div>
                 </div>
                 <div class="language">
                     <div id="languageEn">
-                        <a href="#" class="hover-underline-animation">HUN</a>
+                        <a data-mode="hungarian" href="#" class="hover-underline-animation languageSet">HUN</a>
                     </div>
                     <div id="languageHun">
-                        <a href="#" class="hover-underline-animation">EN</a>
+                        <a data-mode="english" href="#" class="hover-underline-animation languageSet">EN</a>
                     </div>
                 </div>
             </div>
@@ -139,4 +140,5 @@
 
     </div>
     <script type="text/javascript" src="./scripts/themeColor.js"></script>
+    <script type="text/javascript" src="./scripts/languageSet.js"></script>
 </body>
