@@ -4,6 +4,7 @@
     <meta name="viewport" content ="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <link href="./styles/reset_style.css" type="text/css" rel="stylesheet">
     <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
     <header>
@@ -11,10 +12,10 @@
             <div class="leftnav">
                 <div class="brightnessmode">
                     <div class="dark">
-                        <a href="#" ><img src="./images/moon.png"></a>
+                        <a data-mode="dark" class="themeMode" href="#" ><img src="./images/moon.png"></a>
                     </div>
                     <div class="bright">
-                        <a href="#" ><img src="./images/sun.png"></a>
+                        <a data-mode="bright" class="themeMode" href="#" ><img src="./images/sun.png"></a>
                     </div>
                 </div>
                 <div class="language">
@@ -137,5 +138,5 @@
         </div>
 
     </div>
-
+    <script type="text/javascript" src="./scripts/themeColor.js"></script>
 </body>

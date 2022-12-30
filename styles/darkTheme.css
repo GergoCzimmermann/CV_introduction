@@ -1,0 +1,10 @@
+:root{
+    --backgroundColor: hsl(0, 0%, 0%);
+    --backgroundColor2: hsl(215, 100%, 10%);
+    --textBackground: black;
+    --navBackground: hsl(0, 0%, 0%, 0.8);
+    --textColor: white;
+    --nightThemeSelector: black;
+    --dayThemeSelector: hsl(0, 0%, 80%);
+
+}
