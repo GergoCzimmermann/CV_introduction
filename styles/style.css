@@ -212,6 +212,7 @@ nav{
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--backgroundColor2);
+    padding-bottom: 2rem;
     border-bottom: 5px solid gray;
 }
 
@@ -260,6 +261,7 @@ nav{
     flex-wrap: wrap;
     background-color: var(--backgroundColor);
     border-bottom: 5px solid gray;
+    padding-bottom: 2rem;
 }
 
 .studieBox{

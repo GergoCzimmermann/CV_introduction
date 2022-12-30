@@ -15,7 +15,7 @@ let languagesettings = document.getElementsByClassName('languageSet');
 for (i=0; languagesettings.length>i ; i++){
     languagesettings[i].addEventListener ('click', function(){
         let languageType = this.dataset.mode;
-        console.log('The following language has been set: ', languageType);
+        console.log('Language set: ', languageType);
         setLanguage(languageType);
     })
 }

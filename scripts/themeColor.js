@@ -15,7 +15,7 @@ let themeOptions = document.getElementsByClassName('themeMode');
 for (i=0; themeOptions.length>i ; i++){
     themeOptions[i].addEventListener ('click', function(){
         let mode = this.dataset.mode;
-        console.log('The following theme has been set: ', mode);
+        console.log('Theme set: ', mode);
         setTheme(mode);
     })
 }
