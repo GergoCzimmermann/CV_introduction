@@ -36,10 +36,13 @@ h1{
 }
 
 h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight:bold;
 }
 
+p{
+    font-size: 1.3rem;
+}
 
  /* ------------------------------ Navigation------------------------------*/
 
@@ -193,7 +196,7 @@ nav{
     box-shadow: 5px 5px 15px 5px var(--textColor);
 }
 
-/* --------------- Job History part --------------*/
+/* --------------- Job History part (changed based on media screen)--------------*/
 .jobHistory{
     background-color: var(--backgroundColor2);
 }
@@ -221,15 +224,15 @@ nav{
     border-radius: 0.5rem;
     margin: 2rem;
     display: flexbox;
-    height: 30rem;
+    height: 44rem;
     width:300px;
-    padding: 0.5rem;
+    padding: 1rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
     transition: 0.2s;
 }
 
 .jobBox:hover{
-    margin: 1rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     box-shadow: 10px 10px 20px 10px var(--textColor);
     transition: 0.2s;
@@ -240,6 +243,14 @@ nav{
     width: 300px;
     align-items: center;
     text-align: center;
+}
+.jobBox h3{
+    text-align: center;
+}
+
+.jobBox p{
+    padding: 1rem 0.5rem;
+    text-align: justify;
 }
 
 /* --------------- Studies part --------------*/
