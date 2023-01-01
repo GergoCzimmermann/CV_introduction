@@ -125,6 +125,7 @@ nav{
     transform-origin: bottom left;
   }
 
+/*111111111111111111111111111111111 Home page 111111111111111111111111111111111111*/
 
 /* --------------- Wellcome part (changed based on media screen)--------------*/
 .wellcome{
@@ -224,8 +225,8 @@ nav{
     border-radius: 0.5rem;
     margin: 2rem;
     display: flexbox;
-    height: 44rem;
-    width:300px;
+    height: 39rem;
+    width:380px;
     padding: 1rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
     transition: 0.2s;
@@ -243,6 +244,7 @@ nav{
     width: 300px;
     align-items: center;
     text-align: center;
+    margin: 0 40px;
 }
 .jobBox h3{
     text-align: center;
@@ -280,20 +282,36 @@ nav{
     border-radius: 0.5rem;
     margin: 2rem;
     display: flexbox;
-    height: 20rem;
-    width:300px;
-    padding: 0.5rem;
+    min-height: 20rem;
+    max-width:500px;
+    max-height: 50rem;
+    min-width:300px;
+    padding: 1rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
     transition: 0.2s;
 }
 
 .studieBox:hover{
-    margin: 1rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     transition: 0.2s;
     box-shadow: 10px 10px 20px 10px var(--textColor);
 }
 
+.studieBox h3{
+    text-align: center;
+}
+
+.studieBox p{
+    padding: 1rem 0.5rem;
+    text-align: justify;
+}
+
+/*222222222222222222222222222222222 About me page 22222222222222222222222222222222222222*/
+
+.aboutMe{
+    margin: 3rem 1rem;
+}
 
 @media only screen and (max-width: 1200px) {
    /* -Introduction part-*/
@@ -331,4 +349,15 @@ nav{
         border-radius: 0.5rem;
         max-width: 100%;
     }
+
+    /* -Job history part-*/
+    .jobBox{
+        height: 44rem;
+        width:300px;
+    }
+    
+    .jobBox img{
+        margin: 0;
+    }
+
 }
