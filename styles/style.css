@@ -1,6 +1,6 @@
 :root{
     --backgroundColor: hsl(0, 0%, 100%);
-    --backgroundColor2: hsl(215, 100%, 95%);
+    --backgroundColor2: hsl(212, 40%, 90%);
     --textBackground: white;
     --navBackground: hsl(0, 0%, 100%, 0.9);
     --textColor: black;
@@ -38,6 +38,9 @@ h1{
 h3{
     font-size: 2rem;
     font-weight:bold;
+}
+b{
+    font-weight: bold;
 }
 
 p{
@@ -125,8 +128,6 @@ nav{
     transform-origin: bottom left;
   }
 
-/*111111111111111111111111111111111 Home page 111111111111111111111111111111111111*/
-
 /* --------------- Wellcome part (changed based on media screen)--------------*/
 .wellcome{
     margin-top: 2.8rem;
@@ -155,6 +156,7 @@ nav{
 
 }
 
+/*111111111111111111111111111111111 Home page 111111111111111111111111111111111111*/
 /* --------------- Introduction part (changed based on media screen)--------------*/
 .introduction{
     display: flex;
@@ -309,8 +311,46 @@ nav{
 
 /*222222222222222222222222222222222 About me page 22222222222222222222222222222222222222*/
 
-.aboutMe{
-    margin: 3rem 1rem;
+.aboutMeBoxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--backgroundColor2);
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.aboutMeBox{
+    background-color: var(--backgroundColor2);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    transition: 0.2s;
+    line-height: 2rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aboutMeBox p{
+    max-width: 600px;
+    min-width: 200px;
+}
+
+.aboutMeBox img{
+    
+    height: 17rem;
+    width: auto;
+    display: flex;
+    margin: 2rem 0;    
+}
+
+.aboutMeBoxes .reverseWrap{
+    flex-wrap: wrap-reverse;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -339,7 +379,7 @@ nav{
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    
+    /* 11111 Home page 11111*/
     /* -Introduction part-*/
     .introduction img{
         border-radius: 0.5rem;
@@ -358,6 +398,12 @@ nav{
     
     .jobBox img{
         margin: 0;
+    }
+
+    /* 22222 About me page 22222-*/
+    .aboutMeBox img{
+    
+        height: 14rem;  
     }
 
 }
