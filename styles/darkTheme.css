@@ -11,14 +11,24 @@
 
 
 .brightnessmode .dark a{
-    background-image: url("../images/moon_dark.jpg");
+    background-image: url("../images/moon_dark.png");
 }
 
 .brightnessmode .bright a{
-    background-image: url("../images/sun_dark.jpg");
+    background-image: url("../images/sun_dark.png");
 }
 
 
 .wellcome{
     background-image: url("../images/dice-g6a2cf8a8c_1280.jpg");
+}
+
+.aboutMeBox .aboutMeImg1{
+    background-image: url("../images/artificial-intelligence_dark.png");
+}
+.aboutMeBox .aboutMeImg2{
+    background-image: url("../images/man_dark.png");
+}
+.aboutMeBox .aboutMeImg3{
+    background-image: url("../images/website_dark.png");
 }

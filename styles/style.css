@@ -70,7 +70,7 @@ nav{
     margin-left: 1rem;
     border: 0.1rem solid var(--backgroundColor);
     border-radius: 50%;
-    background-image: url("../images/moon.jpg");
+    background-image: url("../images/moon.png");
     width: 2rem;
     height: 2rem;
     background-size: cover;
@@ -81,7 +81,7 @@ nav{
     margin-left: 1rem;
     border: 0.1rem solid var(--backgroundColor);
     border-radius: 50%;
-    background-image: url("../images/sun.jpg");
+    background-image: url("../images/sun.png");
     width: 2rem;
     height: 2rem;
     background-size: cover;
@@ -317,14 +317,13 @@ nav{
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--backgroundColor2);
-    margin: 1rem;
+    margin: 1rem 5%;
     border-radius: 1rem;
 }
 
 .aboutMeBox{
     background-color: var(--backgroundColor2);
     border-radius: 0.5rem;
-    margin: 1rem;
     width: 100%;
     display: flex;
     padding: 1rem;
@@ -341,12 +340,25 @@ nav{
     min-width: 200px;
 }
 
-.aboutMeBox img{
+.aboutMeBox a{
     
-    height: 17rem;
-    width: auto;
+    height: 20rem;
+    width: 20rem;
     display: flex;
-    margin: 2rem 0;    
+    margin: 2rem 0;   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutMeBox .aboutMeImg1{
+    background-image: url("../images/artificial-intelligence.png");
+}
+.aboutMeBox .aboutMeImg2{
+    background-image: url("../images/man.png");
+}
+.aboutMeBox .aboutMeImg3{
+    background-image: url("../images/website.png");
 }
 
 .aboutMeBoxes .reverseWrap{
@@ -401,9 +413,10 @@ nav{
     }
 
     /* 22222 About me page 22222-*/
-    .aboutMeBox img{
+    .aboutMeBox a{
     
-        height: 14rem;  
+        height: 16rem;
+        width: 16rem; 
     }
 
 }
