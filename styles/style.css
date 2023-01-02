@@ -236,7 +236,7 @@ nav{
     border-radius: 0.5rem;
     margin: 2rem;
     display: flexbox;
-    height: 39rem;
+    height:fit-content;
     width:380px;
     padding: 1rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
@@ -459,7 +459,6 @@ nav{
 
     /* -Job history part-*/
     .jobBox{
-        height: 44rem;
         width:300px;
     }
     
