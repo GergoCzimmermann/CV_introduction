@@ -26,6 +26,7 @@ i {
 body{
     background-color: var(--backgroundColor);
     transition: 0.2s;
+    overflow-x: hidden;
 }
 a, li, h1, h2, h3, p {
     color: var(--textColor);
@@ -57,11 +58,11 @@ nav{
     width: 100%;
     padding: 0.2rem 0;
     top: 0;
-    z-index: 9999;
+    z-index: 1000;
 }
 
-.leftnav , .brightnessmode,.brightnessmode a, .language , .rightnav, .rightnav ul{
-    display: flex;
+.leftnav , .brightnessmode,.brightnessmode a, .language, .rightnav, .rightnav ul li{
+    display:inline-flex;
     flex-direction: row;
     align-items: center;
 }
@@ -94,6 +95,16 @@ nav{
 
 .rightnav li{
     margin-right: 1rem;
+}
+
+.rightnav ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav-toggle{
+    display: none;
 }
 
 /*--- Hover effects: Brightness---*/
@@ -365,6 +376,8 @@ nav{
     flex-wrap: wrap-reverse;
 }
 
+/* ///////////////////////////////// Media screens changes ////////////////////////////////////// */
+
 @media only screen and (max-width: 1200px) {
    /* -Introduction part-*/
     .introduction p{
@@ -385,6 +398,49 @@ nav{
 }
 
 @media only screen and (max-width: 580px) {
+    /* -Navigation part-*/
+    .primary-navigation{
+        position: fixed;
+        display: flex;
+        inset: 0 0 0 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: min(20vh, 5rem) 2rem;
+        background: var(--navBackground);
+        backdrop-filter: blur(0.3rem);
+        transform: translateX(100%);
+        transition: 0.5s ease-out;
+    }
+
+    .primary-navigation[data-visible="true"]{
+        transform: translateX(0%);
+    } 
+
+    .rightnav ul li{
+        display: flex;
+        font-weight: bold;
+        padding: 1.5rem 0;
+    }
+
+    .mobile-nav-toggle{
+        position: absolute;
+        display: block;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url("../images/hamburger.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 0;
+        width: 1.5rem;
+        aspect-ratio: 1;
+        top: 0.5rem;
+        right: 1rem;
+    }
+    .mobile-nav-toggle[aria-expanded="true"]
+    {
+        background-image: url("../images/close.png");
+    }
+    
     /* -Wellcome part-*/
     .wellcome h1{
         font-size: 2rem;

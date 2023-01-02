@@ -18,6 +18,18 @@
     background-image: url("../images/sun_dark.png");
 }
 
+@media only screen and (max-width: 580px) {
+    /* -Navigation part-*/
+  .mobile-nav-toggle{
+    background-color: transparent;
+        background-image: url("../images/hamburger_dark.png");
+    }
+    .mobile-nav-toggle[aria-expanded="true"]
+    {
+        background-image: url("../images/close_dark.png");
+    }
+}
+
 
 .wellcome{
     background-image: url("../images/dice-g6a2cf8a8c_1280.jpg");
