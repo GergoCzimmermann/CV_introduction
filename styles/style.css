@@ -29,6 +29,7 @@ body{
 }
 a, li, h1, h2, h3, p {
     color: var(--textColor);
+    font-style: "Times New Roman", Times, serif;
 }
 
 h1{
@@ -181,13 +182,13 @@ nav{
 }
 
 .introduction p{
-    max-width: 26rem;
+    width: 33rem;
     height: fit-content;
     background-color: var(--textBackground);
-    padding: 3rem;
-    margin: 0.5rem;
+    padding: 2rem;
+    margin: 1rem;
     border-radius: 3rem;
-    font-size: 1.9rem;
+    font-size: 2rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
 }
 .introduction p a{
@@ -293,10 +294,9 @@ nav{
     border-radius: 0.5rem;
     margin: 2rem;
     display: flexbox;
-    min-height: 20rem;
     max-width:500px;
-    max-height: 50rem;
-    min-width:300px;
+    min-width:280px;
+    height: fit-content;
     padding: 1rem;
     box-shadow: 5px 5px 15px 5px var(--textColor);
     transition: 0.2s;
@@ -381,17 +381,17 @@ nav{
    /* -Introduction part-*/
     .introduction p{
         font-size: 1.5rem;
-        max-width: 21rem;
-        padding: 2rem;
+        max-width: 24rem;
+        padding: 1.5rem;
     }
 }
 
-@media only screen and (max-width: 710px) {
+@media only screen and (max-width: 800px) {
     /* -Introduction part-*/
     .introduction p{
-        font-size: 1.2rem;
-        max-width: 17rem;
-        padding: 0.7rem;
+        font-size: 1rem;
+        max-width: 16rem;
+        padding: 0.5rem;
         border-radius: 1rem;
     }
 }
@@ -454,6 +454,7 @@ nav{
     }
     .introduction p{
         border-radius: 0.5rem;
+        font-size: 1.2rem;
         max-width: 100%;
     }
 
