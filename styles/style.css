@@ -397,6 +397,19 @@ nav{
 }
 
 @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+    }
+    
+    p{
+        font-size: 1.2rem;
+    }
+    
+    
     /* -Navigation part-*/
     .primary-navigation{
         position: fixed;
@@ -454,7 +467,7 @@ nav{
     }
     .introduction p{
         border-radius: 0.5rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         max-width: 100%;
     }
 
@@ -469,9 +482,10 @@ nav{
 
     /* 22222 About me page 22222-*/
     .aboutMeBox a{
-    
         height: 16rem;
         width: 16rem; 
     }
+
+    
 
 }
