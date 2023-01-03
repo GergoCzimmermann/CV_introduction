@@ -223,7 +223,7 @@ nav{
 
 .jobBoxes{
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--backgroundColor2);
@@ -280,7 +280,7 @@ nav{
 
 .studieBoxes{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: var(--backgroundColor);
